@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>examen</title>
+</head>
+
+<body>
+    <h1>prueba</h1>
+
+    <div id="obj1">
+        desde:<input type="number" name="desde" id="desde">
+        <br>
+        <br> hasta:
+        <input type="number" name="hasta" id="hasta">
+        <br>
+        <br>
+        <input type="button" value="generar" id="generar"> <input type="button" value="dibujar" id="dibujar">
+        <br>
+        <br>
+        <input type="button" value="iterador" id="iterador">
+    </div>
+    <div id="obj2">
+        <br>
+        <br> cedula:
+        <input type="number" name="cedula" id="cedula">
+        <br>
+        <br>
+        <input type="button" value="generar" id="generar">
+
+    </div>
+
+    <body>
+        <table class="egt" id="tabla">
+
+            <tr>
+
+                <td></td>
+
+                <td></td>
+            </tr>
+        </table>
+
+    </body>
+    <script>
+        class solver{
+    constructor(desde,hasta,cedula){
+        this.desde=desde;
+        this.hasta=hasta;
+        this.cedula=cedula;      
+    }  
+}
+        var divObj1 = document.getElementById(obj1);
+        var divObj2 = document.getElementById(obj2);
+        divObj2.style.display = "none";
+
+        document.getElementById("iterador")
+            .addEventListener("click", function () {
+                divObj2.style.display = "none";
+                divObj1.style.display = "block";
+
+
+            })
+        function multiple(valor, multiple) {
+            resto = valor % multiple;
+            if (resto == 0)
+                return true;
+            else
+                return false;
+        }
+
+        // Arrays que contendran los valores multiples del 3
+        var multiples_3 = [];
+        // bucle del 1 al 100
+        if (multiple(i, 3))
+            multiples_3.push(i);
+ 
+     
+        }
+        console.log("Los multiplos de 3 son: ", multiples_3);
+
+        function generarTabla() {
+                    var obj1 = parseInt(document.getElementById("obj1").value);
+                    var obj2 = parseInt(document.getElementById("obj2").value);
+
+
+
+
+    </script>
+
+    <script>
+    </script>
+</body>
+
+</html>
